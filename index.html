@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frontend Challenge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+    <div class="landing-page">
+
+        <nav class="navbar">
+        <p class="logo">Frontend<span class="logo-text"><br>Ninja</span></p>
+            <ul class="nav-items">
+                <li class="nav-item active"><a href="#"></a>Home</li>
+                <li class="nav-item"><a href="#"></a>About</li>
+                <li class="nav-item"><a href="#"></a>Work</li>
+                <li class="nav-item"><a href="#"></a>Contact</li>
+                <i class="fa fa-search nav-item" aria-hidden="true"></i>
+            </ul>
+            <i id="ham" onclick="showNav()" class="fa fa-bars fa-lg" aria-hidden="true"></i>
+        </nav>
+
+        <div class="hero-section">
+            <div class="hero-text">
+                <h1>Are you a frontend ninja ?</h1>
+                <p>Frontend ninjas are the superheroes who bring life into designs. We’re <br> looking for frontend ninjas with knack of amazing attention to detail.<br> Are you one?</p>
+            </div>
+            <button class="hero-btn">Apply Now <span> <i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span></button>
+        </div>
+    </div>
+
+    <div class="about-page">
+        <h1>What should you have?</h1>
+
+        <div class="requirements">
+
+            <div class="requirements-details">
+                <img src="https://dummyimage.com/300x196/948c94/fff&text=Attention+to+detail">
+                <h5>Attention to detail</h5>
+                <p>We look for attention to detail in our candidates. As a frontend intern, you should have a superpowers of looking into details of a design.</p>
+            </div>
+
+            <div class="requirements-details">
+                <img src="https://dummyimage.com/300x196/948c94/fff&text=Frontend+tech+Knowledge">
+                <h5>Frontend tech knowledge</h5>
+                <p>You must be equipped with a passion to learn and explore new technologies. You are not afraid to implement a new framework or language.</p>
+            </div>
+
+            <div class="requirements-details">
+                <img src="https://dummyimage.com/300x196/948c94/fff&text=Love+for+technology">
+                <h5>Love for technology</h5>
+                <p>You must be equipped with a passion to learn and explore new technologies. You are not afraid to implement a new framework or language.</p>
+            </div>
+
+        </div>
+
+        <div class="extra-info">
+
+            <div class="resources">
+                <h2>Resources</h2>
+                <ul class="resource-list">
+                    <li><i class="fa fa-globe" aria-hidden="true"></i> Designer News</li> <hr>
+                    <li><i class="fa fa-globe" aria-hidden="true"></i> Smashing Magazine</li> <hr>
+                    <li><i class="fa fa-globe" aria-hidden="true"></i> Frontend Front</li><hr>
+                </ul>
+                <h5>View all Resources</h5>
+            </div>
+
+            <div class="latest-news">
+                <h2>Latest from frontend</h2>
+                <ul class="resource-list">
+                    <li>JavaScript Performance Optimization Tips: An Overview <br><small>13 hours ago</small></li> <hr>
+                    <li>Designing a dashboard for Concourse<br><small>13 hours ago</small></li> <hr>
+                    <li>JSRobot – Learn to code in JavaScript by playing a game<br><small>13 hours ago</small></li> <hr>
+                </ul>
+                <h5>View all Updates</h5>
+            </div>
+        </div>
+
+            <div class="ninja">
+                <hr class="line1">
+                <i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i>
+                <hr class="line2">
+            </div>
+    </div>
+
+    <div class="gallery-page">
+        <h1>Some random food photos</h1>
+        <h5>Just because ¯\_(ツ)_/¯ </h5>
+        <div class="gallery-box">
+            <img src="https://dummyimage.com/480x400/736173/82828a&text=Foods">
+            <img src="https://dummyimage.com/480x400/decade/82828a&text=Foods">
+            <img src="https://dummyimage.com/480x400/52c4a9/82828a&text=Foods">
+            <img src="https://dummyimage.com/480x400/c5f23d/82828a&text=Foods">
+            <img src="https://dummyimage.com/480x400/ed7700/82828a&text=Foods">
+            <img src="https://dummyimage.com/480x400/orangered/82828a&text=Foods">
+        </div>
+    </div>
+
+
+
+
+<script src="https://use.fontawesome.com/4163bec399.js"></script>
+<script type="text/javascript">
+    function showNav(){
+        let navElements = document.querySelector(".nav-items");
+        if(navElements.style.display == 'none'){
+            document.querySelector(".nav-items").style.display = 'block'
+        }
+        else{
+            document.querySelector(".nav-items").style.display = 'none'
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*Landing page stylesheet*/
+
+.landing-page{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./assets/background-image.png");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    padding: 25px;
+}
+
+.logo{
+    text-transform: uppercase;
+    color: #88C542;
+    font-weight: bolder;
+}
+
+.logo-text{
+    color: #88C542;
+    letter-spacing: 9px;
+}
+
+.nav-items{
+    display: flex;
+    list-style-type: none;
+    margin-right: 20px;
+    margin-left: auto;
+}
+
+.nav-item{
+    margin: 0px 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.active{
+    color: #88C542;
+}
+
+#ham{
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+
+.hero-section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero-text{
+    color: white;
+    text-align: center;
+}
+
+.hero-text h1{
+    font-size: 3.8rem;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+.hero-text p{
+    font-size: 1.1rem;
+    margin: 20px 0px;
+}
+
+.hero-section button{
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 14px 22px;
+  color: white;
+  background-color: #27AD6C;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  text-transform: uppercase;
+  line-height: 18px;
+  margin-top: 15px;
+}
+
+/*Landing Page Stylesheet ends*/
+
+/*About Page Stylesheet*/
+
+.about-page{
+    margin: 10vh 0;
+}
+
+.about-page h1{
+    text-align: center;
+    font-size: 2rem;
+    color: #9B9B9B;
+}
+
+.requirements{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3vh;
+    padding: 30px 50px;
+    height: auto;
+}
+
+.requirements-details{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.requirements-details p{
+  width: 70%;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  line-height: 22px;
+}
+
+ .requirements-details h5{
+    width: 70%;
+    text-align: center;
+    margin: 35px 0px 0px 0px;
+    font-size: 1rem;
+    color: #27AD6C;
+    font-weight: 700;
+    line-height: 24px;
+ }
+
+.extra-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 90px;
+    margin: 50px 0px;
+    height: auto;
+}
+
+.resources{
+    width: 52%;
+    border-right: 1px solid #88C542;
+}
+
+.resources h2{
+    font-size: 1.6rem;
+    color: #9B9B9B;
+    margin: 0px 0px 20px 0px;
+}
+
+.resource-list{
+    list-style-type: none;
+    color: #27AD6C;
+    font-weight: 400;
+}
+
+.resource-list li{
+    margin: 25px 0px;
+    font-weight: 700;
+}
+
+.resource-list hr{
+    width: 80%;
+}
+
+.fa-globe{
+    color: #D2D9CA;
+}
+
+.resources h5{
+    font-size: 1.1rem;
+    color: #27AD6C;
+    margin-top: 15px;
+}
+
+.latest-news{
+    width: 47%;
+}
+
+.latest-news h2{
+    font-size: 1.6rem;
+    color: #9B9B9B;
+    margin: 0px 0px 25px 20%;
+}
+
+.latest-news>.resource-list li{
+    margin: 25px 0px 25px 20%;
+    font-weight: 700;
+}
+
+.latest-news>.resource-list hr{
+    margin: 0px 0px 0px 20%;
+}
+
+.latest-news h5{
+    font-size: 1.1rem;
+    color: #27AD6C;
+    margin: 15px 0px 25px 20%;
+}
+
+.ninja{
+    text-align: center;
+    margin: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.line1{
+    position: absolute;
+    left: 33%;
+    top: 28%;
+    background-color: #88C542;
+    width: 12%;
+}
+
+.line2{
+    position: absolute;
+    right: 33%;
+    top: 28%;
+    background-color: #88C542;
+    width: 12%;
+}
+
+.gallery-page{
+    margin: 50px 0px;
+    text-align: center;
+}
+
+.gallery-page h1{
+    color: #9B9B9B;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.gallery-page h5{
+    color: #9B9B9B;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.gallery-box{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    height: auto;
+}
+
+.gallery-box img{
+    width: 33%;
+    height: 330px;
+}
+
+
+/* About Page Stylesheet ends  */
+
+
+@media only screen and (max-width: 700px) {
+    #ham{
+        display: inline;
+        margin-left: auto;
+    }
+
+    .nav-items{
+        display: none;
+        position: absolute;
+        z-index: 99999;
+        background-color: #ccc;
+        top: 70px;
+        left: 0px;
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+    }
+
+    .nav-item{
+        padding: 12px 0px;
+        border-bottom: 2px solid black;
+        font-weight: bolder;
+        color: black;
+    }
+
+    .active{
+        color: #88C542;
+    }
+
+
+    .hero-text h1{
+        font-size: 2.8rem;
+    }
+
+    .requirements{
+        display: flex;
+        flex-direction: column;
+        padding: 30px 25px;
+    }
+
+    .requirements-details{
+        margin: 25px 0px;
+    }
+
+    .requirements-details h5 p{
+        margin: 20px 0px;
+    }
+
+    .extra-info{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 20px;
+        text-align: center;
+    }
+
+    .extra-info hr{
+        display: none;
+    }
+
+    .resources{
+        width: 100%;
+        border: none;
+        text-align: center;
+        margin: 20px 0px 40px 0px;
+    }
+
+    .latest-news{
+        text-align: center;
+        width: 100%;
+        margin: 10px 0px 40px 0px;
+    }
+
+    .resource-list li{
+        text-align: center;
+        margin: 0px;
+    }
+
+    .latest-news h2{
+        margin: 0px;
+    }
+
+    .resource-list{
+        text-align: center;
+        margin: 0px;
+    }
+
+    .ninja{
+        width: 100%;
+    }
+
+    .gallery-page h1{
+        text-align: center;
+    }
+
+    .gallery-box{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gallery-box img{
+        width: 100vw;
+        margin: 15px 0px;
+    }
+
+}
